@@ -12,16 +12,7 @@ export function SideMenu() {
   const timerIsActive = useIsAnyTimerActive();
   return (
     <>
-      <SideMenuWrap id="side-menu">
-        {/* <MenuButton
-          id="menu-button"
-          onClick={() => {
-            (document.querySelector('#side-menu') as HTMLDivElement).classList.toggle('menu-open');
-            (document.querySelector('#menu-button') as HTMLButtonElement).classList.toggle(
-              'menu-open'
-            );
-          }}
-        ></MenuButton> */}
+      <SideMenuWrap>
         <Text css={{ fontSize: 24, pl: 24, mb: 24, '@tablet': { display: 'none' } }}>Menu</Text>
         <TabButton
           disabled={timerIsActive}
@@ -69,6 +60,7 @@ const SideMenuWrap = styled('aside', {
   transition: 'all 300ms ease-in-out',
 
   '@tablet': {
+    position: 'absolute',
     backgroundColor: 'unset',
     border: 'none',
     boxShadow: 'none',
