@@ -81,6 +81,9 @@ const TimerInputWrap = styled('div', {
     justifyContent: 'start',
     alignItems: 'center',
     gap: 4,
+    '@phone': {
+      gap: 0,
+    },
   },
 
   input: {

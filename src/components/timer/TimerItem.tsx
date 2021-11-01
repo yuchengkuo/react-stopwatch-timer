@@ -71,8 +71,7 @@ const TimerItemWrap = styled('div', {
   mt: 12,
   mb: 36,
   '@phone': {
-    px: 16,
-    py: 16,
+    p: 12,
     height: 200,
   },
 });

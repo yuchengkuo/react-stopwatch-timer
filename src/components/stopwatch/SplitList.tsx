@@ -46,13 +46,13 @@ const SplitTable = styled('table', {
   },
   '& th:first-child, & td:first-child': {
     textAlign: 'left',
-    width: 'min-content',
+    width: 72,
   },
   '& th:last-child, & td:last-child': {
     textAlign: 'right',
   },
   '& th:nth-child(2), & td:nth-child(2)': {
-    pl: 24,
+    pl: 8,
     textAlign: 'left',
   },
 });

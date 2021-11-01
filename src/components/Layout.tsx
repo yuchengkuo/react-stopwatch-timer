@@ -14,5 +14,5 @@ const Main = styled('main', {
   py: 120,
   display: 'flex',
   flexDirection: 'column',
-  px: 24,
+  px: 16,
 });

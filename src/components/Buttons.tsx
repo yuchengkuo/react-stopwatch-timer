@@ -36,6 +36,8 @@ export const ControlButton = styled(BaseButton, {
   fontSize: 14,
   fontWeight: 600,
   textTransform: 'uppercase',
+  display: 'grid',
+  placeItems: 'center',
 
   transition: 'all 200ms ease-out',
   '&:active': {
@@ -73,65 +75,6 @@ export const ControlButton = styled(BaseButton, {
   },
 });
 
-export const Button = styled(BaseButton, {
-  '& svg': {
-    verticalAlign: '-4px',
-    mr: 8,
-  },
-  transition: 'all 200ms ease-out',
-
-  variants: {
-    type: {
-      tab: {
-        fontSize: 16,
-        fontWeight: 600,
-        py: 8,
-        px: 24,
-        textAlign: 'left',
-        maxWidth: 200,
-        '&:hover': {
-          backgroundColor: '$blue4',
-        },
-      },
-    },
-    style: {
-      default: {
-        backgroundColor: '$green',
-        color: '$blue6',
-      },
-      ghost: {
-        border: '1px solid $blue5',
-      },
-      muted: {
-        backgroundColor: '$blue2',
-      },
-      active: {
-        backgroundColor: '$red',
-      },
-    },
-    active: {
-      true: {},
-    },
-    size: {
-      L: {
-        width: 96,
-      },
-      M: {
-        width: 64,
-      },
-    },
-  },
-  compoundVariants: [
-    {
-      type: 'tab',
-      active: 'true',
-      css: {
-        backgroundColor: '$blue4',
-      },
-    },
-  ],
-});
-
 export const PillButton = styled(BaseButton, {
   px: 12,
   py: 6,
@@ -139,9 +82,14 @@ export const PillButton = styled(BaseButton, {
   fontWeight: 600,
   color: '$blue5',
   borderRadius: 4,
-  textAlign: 'center',
+  display: 'gird',
+  placeItems: 'center',
+
   '& svg': {
     verticalAlign: 'center',
+  },
+  '@phone': {
+    px: 8,
   },
 
   transition: 'all 200ms ease-out',

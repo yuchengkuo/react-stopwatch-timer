@@ -73,7 +73,7 @@ const SideMenuWrap = styled('aside', {
     pt: 40,
     pb: 24,
     px: 24,
-    mx: '50%',
+    ml: '50%',
     transform: 'translateX(-50%)',
 
     button: {
