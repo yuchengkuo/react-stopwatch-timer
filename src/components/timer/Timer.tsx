@@ -18,7 +18,12 @@ export const Timer = () => {
         ))}
         <ControlButton
           type="ghost"
-          css={{ width: 32, mx: '50%', transform: 'translateX(-50%)' }}
+          css={{
+            width: 32,
+            mx: '50%',
+            transform: 'translateX(-50%)',
+            transformOrigin: '-450% 50%',
+          }}
           onClick={() => addTimer(amount[amount.length - 1] + 1)}
         >
           <AddIcon />

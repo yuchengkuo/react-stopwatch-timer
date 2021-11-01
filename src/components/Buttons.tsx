@@ -17,7 +17,7 @@ export const TabButton = styled(BaseButton, {
     backgroundColor: '$blue4',
   },
   '&:active': {
-    scale: 0.96,
+    transform: 'scale(0.96)',
   },
 
   variants: {
@@ -39,7 +39,7 @@ export const ControlButton = styled(BaseButton, {
 
   transition: 'all 200ms ease-out',
   '&:active': {
-    scale: 0.9,
+    transform: 'scale(0.9)',
   },
 
   variants: {
@@ -139,13 +139,17 @@ export const PillButton = styled(BaseButton, {
   fontWeight: 600,
   color: '$blue5',
   borderRadius: 4,
+  textAlign: 'center',
+  '& svg': {
+    verticalAlign: 'center',
+  },
 
   transition: 'all 200ms ease-out',
   '&:hover': {
     backgroundColor: '$blue3',
   },
   '&:active': {
-    scale: 0.9,
+    transform: 'scale(0.96)',
   },
 
   variants: {
