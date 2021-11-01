@@ -2,11 +2,11 @@ import { styled } from 'stitches.config';
 import { BaseButton } from 'styles/button';
 
 export const TabButton = styled(BaseButton, {
+  px: 24,
+  py: 8,
   borderRadius: 8,
   fontSize: 16,
   fontWeight: 600,
-  py: 8,
-  px: 24,
   textAlign: 'left',
   transition: 'all 200ms ease-out',
   '& svg': {
@@ -82,7 +82,7 @@ export const PillButton = styled(BaseButton, {
   fontWeight: 600,
   color: '$blue5',
   borderRadius: 4,
-  display: 'gird',
+  display: 'grid',
   placeItems: 'center',
 
   '& svg': {

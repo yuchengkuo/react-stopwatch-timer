@@ -8,6 +8,8 @@ export const BaseButton = styled('button', {
   color: '$foreground',
   cursor: 'pointer',
   fontFamily: 'inherit',
+  p: 0,
+  m: 0,
 
   '&:disabled': {
     opacity: 0.5,

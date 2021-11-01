@@ -86,6 +86,10 @@ const TimerInputWrap = styled('div', {
     },
   },
 
+  '& div:last-child': {
+    display: 'flex',
+  },
+
   input: {
     fontFamily: '$sans',
     fontSize: 32,
