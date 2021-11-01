@@ -50,4 +50,8 @@ const TimerTimeDisplayWrap = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
+
+  '& div:last-child': {
+    display: 'flex',
+  },
 });
