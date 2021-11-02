@@ -33,6 +33,7 @@ export const ControlButton = styled(BaseButton, {
   borderRadius: '50%',
   aspectRatio: 1,
   width: 64,
+  height: 64,
   fontSize: 14,
   fontWeight: 600,
   textTransform: 'uppercase',

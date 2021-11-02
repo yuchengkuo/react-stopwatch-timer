@@ -20,6 +20,7 @@ export const Timer = () => {
           type="ghost"
           css={{
             width: 32,
+            height: 32,
             mx: '50%',
             transform: 'translateX(-50%)',
             transformOrigin: '-450% 50%',

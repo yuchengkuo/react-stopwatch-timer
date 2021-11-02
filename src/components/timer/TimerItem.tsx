@@ -32,7 +32,12 @@ export const TimerItem = ({ id }) => {
           <ControlButton
             type={isActive ? 'active' : 'default'}
             onClick={isCompleted ? resetCompleted : isActive ? stopTimer : startTimer}
-            css={{ width: 96, backgroundColor: '$blue4', '@phone': { width: 64 } }}
+            css={{
+              width: 96,
+              height: 96,
+              backgroundColor: '$blue4',
+              '@phone': { width: 64, height: 64 },
+            }}
           >
             {isCompleted ? <CheckIcon /> : isActive ? <PauseIcon /> : <StartIcon />}
             <Progress percentage={percentage} id={id} />
